@@ -20,10 +20,10 @@ void heapify(int arr[], int n, int i) {
   int right = 2 * i + 2;
 
   // if left val is larger than maxVal, set new maxVal
-  if (left < n && arr[left] < arr[minVal])
+  if (left < n && arr[left] > arr[minVal])
     minVal = left;
   // if right val is larger than maxVal, set new maxVal
-  if (right < n && arr[right] < arr[minVal])
+  if (right < n && arr[right] > arr[minVal])
     minVal = right;
 
   // update new maxVal, continue down sub tree
